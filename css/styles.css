@@ -298,7 +298,7 @@ body {
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* outline: 4px solid teal; */
-  /* z-index: 10; */
+  z-index: 10;
 }
 
 .backdrop.is-hidden {
@@ -325,9 +325,68 @@ body {
   border-radius: 4px;
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 5000ms;
+  transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 10;
+}
+
+.form {
+  height: 580px;
+  width: 528px;
+  padding: 40px;
+  /* outline: 2px solid tomato; */
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-text-color);
+  margin-bottom: 12px;
+  /* outline: 2px solid tomato; */
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* outline: 2px solid tomato; */
+}
+
+.form-field .form-input {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  /* outline: 2px solid tomato; */
+}
+
+.form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 4px;
+  color: var(--light-text-color);
+  /* outline: 2px solid tomato; */
+}
+
+.form-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.checkbox-selected-text {
+  color: var(--focus-color);
+  text-decoration: 1px underline var(--focus-color);
+}
+
+.form-textarea {
+  width: 100%;
 }
 
 .action {
@@ -720,6 +779,7 @@ margin-right: 30px;
 .footer-container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-social-link {
@@ -768,7 +828,7 @@ margin-right: 30px;
   margin-right: 10px;
 }
 
-.left {
+.contacts-information {
   margin-right: 70px;
 }
 
@@ -944,6 +1004,48 @@ margin-right: 30px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--light-text-color);
+}
+
+.subscription {
+  
+}
+
+.subscription-form {
+
+}
+
+.subscription-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--wight-text-color);
+}
+
+.subscription-form-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--dark-background-color);
+  color: var(--wight-text-color);
+}
+
+.subscription-btn {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--wight-text-color);
+  background-color: var(--focus-color);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 
 /* -----------------PARTFOLIO-FOOTER----------------- */

@@ -56,11 +56,44 @@
         <button data-modal-open type="button" class="hero-btn">Заказать услугу</button>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <ul data-modal-close class="action">
-                    <li>   
-                        <button></button>
-                    </li> 
-                </ul>
+                <form class="form">
+                    <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                    <div class="form-field">
+                        <label for="name" class="form-label">Имя</label>
+                            <input type="text" class="form-input" name="name" id="name">
+                        <svg class="form-icon">
+                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </div>
+                    <div class="form-field">
+                        <label for="phone-number" class="form-label">Телефон</label>
+                        <input type="tel" class="form-input" name="phone-number" id="phone-number">
+                        <svg class="form-icon">
+                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </div>
+                    <div class="form-field">
+                        <label for="mail" class="form-label">Почта</label>
+                        <input type="email" class="form-input" name="mail" id="mail">
+                        <svg class="form-icon">
+                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </div>
+                    <div class="form-field">
+                        <label for="comment" class="form-label">Комментарий</label>
+                        <textarea class="form-textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <input type="checkbox" name="" id="">
+                        <label for="comment" class="form-label">Соглашаюсь с рассылкой и принимаю <a class="checkbox-selected-text" href="">Условия договора</a></label>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+                    <ul data-modal-close class="action">
+                        <li>   
+                            <button></button>
+                        </li> 
+                    </ul>
             </div>
         </div>
         </div>
@@ -326,7 +359,7 @@
 <footer class="footer">
         <div class="container">
             <div class="footer-container">
-                <div class="left">
+                <div class="contacts-information">
                      <a class= "logo-link-footer" href=""><span class="web">Web</span>Studio</a>
                     <address>
                         <ul class="address-list list"> 
@@ -347,7 +380,6 @@
                         </ul>
                     </address>
                 </div>
-                <div class="right">
                     <div class="footer-social-links">
                         <p class="footer-inscription">Присоединяйтесь</p>
                         <ul class="footer-social-link">
@@ -381,7 +413,14 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                    <div class="subscription">
+                        <form action="" class="subscription-form">
+                            <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+                            <label for="mail" class="subscription-form-label"></label>
+                            <input type="email" class="subscription-form-input" name="mail" id="mail">
+                            <button class="subscription-btn" type="submit">Подписаться</button>
+                        </form>
+                    </div>
             </div>
         </div>
     </footer>
