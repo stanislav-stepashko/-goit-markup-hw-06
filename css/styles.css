@@ -328,13 +328,11 @@ body {
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 10;
+  padding: 40px;
 }
 
 .form {
-  height: 580px;
-  width: 528px;
-  padding: 40px;
-  /* outline: 2px solid tomato; */
+  
 }
 
 .form-title {
@@ -344,7 +342,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-text-color);
-  margin-bottom: 12px;
+  margin-bottom: 30px;
   /* outline: 2px solid tomato; */
 }
 
@@ -355,15 +353,31 @@ body {
   /* outline: 2px solid tomato; */
 }
 
-.form-field .form-input {
+.form-field-checkbox {
+  margin-top: 20px;
+  display: flex;
+  align-items: stretch;
+}
+
+.form-checkbox {
+  margin-right: 9px;
+}
+
+.form-input {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
   /* outline: 2px solid tomato; */
+}
+
+.form-input:hover {
+  fill: var(--focus-color);
+  border: 1px solid var(--focus-color);
 }
 
 .form-label {
@@ -376,6 +390,7 @@ body {
 }
 
 .form-icon {
+  /* position: absolute; */
   width: 18px;
   height: 18px;
 }
@@ -387,6 +402,26 @@ body {
 
 .form-textarea {
   width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+
+.form-btn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--focus-color);
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--wight-text-color);
+  letter-spacing: 0.06em;
+  margin-top: 30px;
+  cursor: pointer;
 }
 
 .action {
@@ -401,7 +436,11 @@ body {
   list-style: none;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+  /* cursor: pointer; */
+}
+
+..action:hover {
+  fill: var(--focus-color);
 }
 
 .action button {

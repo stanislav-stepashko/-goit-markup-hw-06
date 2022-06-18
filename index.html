@@ -56,44 +56,45 @@
         <button data-modal-open type="button" class="hero-btn">Заказать услугу</button>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+                <ul data-modal-close class="action">
+                    <li>
+                        <button></button>
+                    </li>
+                </ul>
+                <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
                 <form class="form">
-                    <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
                     <div class="form-field">
                         <label for="name" class="form-label">Имя</label>
-                            <input type="text" class="form-input" name="name" id="name">
+                        <input type="text" class="form-input" name="name" required id="name">
                         <svg class="form-icon">
                             <use href="./images/symbol-defs.svg#icon-instagram"></use>
                         </svg>
                     </div>
                     <div class="form-field">
                         <label for="phone-number" class="form-label">Телефон</label>
-                        <input type="tel" class="form-input" name="phone-number" id="phone-number">
-                        <svg class="form-icon">
+                        <input type="tel" class="form-input" name="phone-number" required id="phone-number">
+                        <!-- <svg class="form-icon">
                             <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                        </svg>
+                        </svg> -->
                     </div>
                     <div class="form-field">
                         <label for="mail" class="form-label">Почта</label>
-                        <input type="email" class="form-input" name="mail" id="mail">
-                        <svg class="form-icon">
+                        <input type="email" class="form-input" name="mail" required id="mail">
+                        <!-- <svg class="form-icon">
                             <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                        </svg>
+                        </svg> -->
                     </div>
                     <div class="form-field">
                         <label for="comment" class="form-label">Комментарий</label>
-                        <textarea class="form-textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                        <textarea class="form-textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
                     </div>
-                    <div class="form-field">
-                        <input type="checkbox" name="" id="">
+                    <div class="form-field-checkbox">
+                        <input class="form-checkbox" type="checkbox" name="" id="">
                         <label for="comment" class="form-label">Соглашаюсь с рассылкой и принимаю <a class="checkbox-selected-text" href="">Условия договора</a></label>
                     </div>
-                    <button type="submit">Отправить</button>
+                    <button class="form-btn" type="submit">Отправить</button>
                 </form>
-                    <ul data-modal-close class="action">
-                        <li>   
-                            <button></button>
-                        </li> 
-                    </ul>
+                    
             </div>
         </div>
         </div>
