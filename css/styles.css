@@ -347,6 +347,7 @@ body {
 }
 
 .form-field {
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -368,11 +369,21 @@ body {
   padding: 0;
   width: 100%;
   height: 40px;
-  margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
   /* outline: 2px solid tomato; */
+}
+
+.wrapper-input {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  fill: var(--dark-text-color);
+}
+
+.wrapper-input:hover {
+  fill: var(--focus-color);
 }
 
 .form-input:hover {
@@ -390,9 +401,16 @@ body {
 }
 
 .form-icon {
-  /* position: absolute; */
+  position: absolute;
+
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+
+  /* display: inline-block; */
   width: 18px;
   height: 18px;
+  fill: inherit;
 }
 
 .checkbox-selected-text {
@@ -436,16 +454,16 @@ body {
   list-style: none;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
-..action:hover {
+..action:hover button {
   fill: var(--focus-color);
+  color: var(--focus-color);
 }
 
 .action button {
   display: block;
-  fill: var(--svg-color);
   border: none;
   width: 11px;
   height: 11px;
