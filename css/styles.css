@@ -342,12 +342,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-text-color);
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   /* outline: 2px solid tomato; */
 }
 
 .form-field {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -357,7 +356,7 @@ body {
 .form-field-checkbox {
   margin-top: 20px;
   display: flex;
-  align-items: stretch;
+  justify-content: center;
 }
 
 .form-checkbox {
@@ -373,8 +372,8 @@ body {
   border-radius: 4px;
   cursor: pointer;
   padding-left: 42px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   /* outline: 2px solid tomato; */
 }
 
@@ -415,12 +414,9 @@ body {
 
 .form-icon {
   position: absolute;
-
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
-
-  /* display: inline-block; */
   width: 18px;
   height: 18px;
   fill: inherit;
@@ -865,8 +861,6 @@ margin-right: 30px;
 
 .footer-social-link {
   display: flex;
-  /* padding: 0;
-  margin: 0; */
   /* outline: 1px solid teal; */
 }
 
@@ -874,7 +868,6 @@ margin-right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 0; */
   color: var(--dark-text-color);
   width: 44px;
   height: 44px;
@@ -1092,7 +1085,7 @@ margin-right: 30px;
 }
 
 .subscription-form {
-
+  margin-left: auto;
 }
 
 .subscription-title {
@@ -1126,17 +1119,30 @@ margin-right: 30px;
 }
 
 .subscription-btn {
+  position: relative;
   width: 200px;
   height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
+  padding-left: 30px;
+  padding-right: 62px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   letter-spacing: 0.06em;
   color: var(--wight-text-color);
   background-color: var(--focus-color);
   border-radius: 4px;
   border: none;
   cursor: pointer;
+}
+
+.subscription-btn-icon {
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  fill: var(--wight-text-color);
 }
 
 /* -----------------PARTFOLIO-FOOTER----------------- */
