@@ -226,12 +226,10 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--dark-background-color);
-  background-image: linear-gradient(
-    to right, 
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-    ),
-  url(../images/shapka-fon.jpg);
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/shapka-fon.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -331,7 +329,7 @@ body {
 }
 
 .form {
-  
+
 }
 
 .form-title {
@@ -390,6 +388,7 @@ body {
 
 .wrapper-input:focus {
   fill: var(--focus-color);
+  /* border: 1px solid var(--focus-color); */
 }
 
 .form-input:hover {
@@ -398,6 +397,7 @@ body {
 }
 
 .form-input:focus {
+  fill: var(--focus-color);
   border: 1px solid var(--focus-color);
 }
 
@@ -422,15 +422,17 @@ body {
   position: absolute;
   top: 50%;
   left: 15px;
-  transform: translateY(-50%);
+  transform: translateY(-35%);
   width: 18px;
   height: 18px;
   fill: inherit;
 }
 
+
+
 .form-icon:hover,
 .form-icon:focus {
-  fill: var(--focus-color);
+  /* fill: inherit; */
 }
 
 .checkbox-selected-text {
@@ -531,9 +533,7 @@ body {
 
 /* -----------------HERO-BENEFITS----------------- */
 
-.hero-benefits {
-
-}
+.hero-benefits {}
 
 .benefits-list {
   display: flex;
@@ -541,7 +541,7 @@ body {
 }
 
 .benefits-item:not(:last-child) {
-margin-right: 30px;
+  margin-right: 30px;
 }
 
 .benefits-item::before {
@@ -685,8 +685,8 @@ margin-right: 30px;
   background-color: #fff;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   /* outline: 2px solid teal; */
 }
@@ -982,8 +982,8 @@ margin-right: 30px;
   background-color: var(--focus-color);
   color: var(--wight-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-  0px 1px 2px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-projects-item {
@@ -992,8 +992,8 @@ margin-right: 30px;
 
 .portfolio-projects-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-  0px 4px 4px rgba(0, 0, 0, 0.06),
-  1px 4px 6px rgba(0, 0, 0, 0.16);
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-projects-item:not(:nth-child(3n)) {
@@ -1129,9 +1129,9 @@ margin-right: 30px;
 
 .subscription-form-inpu::placeholder {
   font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
 }
 
 .subscription-btn {
@@ -1162,4 +1162,3 @@ margin-right: 30px;
 }
 
 /* -----------------PARTFOLIO-FOOTER----------------- */
-
